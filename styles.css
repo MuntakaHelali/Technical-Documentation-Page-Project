@@ -20,16 +20,23 @@ nav{
     border-right: 2px solid var(--text-color);
 }
 
+nav a:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 nav a {
     border-bottom: 1px solid var(--text-color);
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 1.5rem;
     display: flex;
     align-items: center;
+}
 
+nav a:last-of-type{
+    border: none;
 }
 
 nav header{
-    font-size: 1.7rem;
+    font-size: large;
     font-weight: 500;
     padding: 1.5rem;  
     border-bottom: 1px solid var(--text-color);
@@ -76,15 +83,69 @@ p{
 }
 
 li{
-    margin-left: 3%;
+    margin-left: 2%;
     color: var(--text-color);
     margin-bottom: 1rem;
 }
 
-@media (min-width: 600px) and (max-width:1200px) 
-{
-    nav{
-        width: 30%;
-        gap: 1.5rem;
-    }    
+ul{
+    margin-left: 2%;
 }
+
+code{
+    font-size: small;
+    font-family: monospace;
+    background-color:rgb(214, 212, 209);
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    color: rgb(81, 87, 91);
+}
+
+@media only screen and (max-width: 1400px){
+    #navbar header{
+        font-size: medium;
+        margin-left: -1.1rem;
+    }
+}
+
+@media only screen and (max-width: 977px) {
+    #navbar {
+      background-color: white;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+      overflow-y: scroll;
+    }
+    
+    #main-doc {
+      position: relative;
+      margin-left: 2%;
+      margin-top: 290px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left: 20px;
+    }
+  
+    code {
+      min-width: 233px;
+    }
+  }
+  
